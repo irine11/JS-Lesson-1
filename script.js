@@ -46,9 +46,10 @@ for (let x of array) {
         console.log(x);
     }
 }
+
 // 6 exercise 
 let user = {
-    name: "Kristina",
+    name: "giorgi",
     age: 20,
     studentStatus: "active"
 }
