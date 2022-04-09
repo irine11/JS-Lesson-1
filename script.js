@@ -31,6 +31,21 @@ for (let x of numbers) {
     }
 
 }
+// 4 exercise 
+let user = {
+    name: "giorgi",
+    age: 20,
+    studentStatus: "active"
+}
+if (user.age < 18 && user.studentStatus == "active") {
+    console.log(hello);
+} else if (user.name == "giorgi") {
+    console.log('hello giorgi')
+} else if (user.studentStatus == "active" || user.age < 25) {
+    console.log("hello world")
+} else {
+    console.log(error);
+}
 // let numbers = [5, 6, 10, 25, 3, 7, 4, 100, 28, 36, 89];
 for (let x = 0; x < numbers.length; x++) {
     if (numbers[x] > 5) {
@@ -47,31 +62,22 @@ for (let x of array) {
     }
 }
 
-// 6 exercise 
-let user = {
-    name: "giorgi",
-    age: 20,
-    studentStatus: "active"
-}
-if (user.age < 18 && user.studentStatus == "active") {
-    console.log(hello);
-} else if (user.name == "Kristina") {
-    console.log('hello Kristina')
-} else if (user.studentStatus == "active" || user.age < 25) {
-    console.log("hello world")
-} else {
-    console.log(error);
-}
-
-//7 exercise
-let array = [[2, -3, 5, 10], [25, -24, -11, 100], [-6, -7, 10]]
-
-for (let i = 0; i < array.length; i++) {
-    let numbers = array[i];
-    for (let x = 0; x < numbers.length; x++) {
-        let positive = numbers[x];
+//6 exercise
+let array = [[2, -3, 5, 10],[25, -24, -11, 100],[-6, -7, 10]]
+for (let x of array) {
+    let numbers = x;
+    for (let z of numbers) {
+        let positive = z;
         if (positive > 0) {
             console.log(positive);
         }
+    }
+}
+// 7 exercise
+let array = [32, 10, "hello", null, "hello2", 50]
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (typeof element == "number" && element % 5 == 0) {
+        console.log(element);
     }
 }
